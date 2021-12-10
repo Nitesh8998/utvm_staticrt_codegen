@@ -3,9 +3,30 @@ PROJECT(example_target_src)
 
 INCLUDE(../../cmake/LinkTVM.cmake)
 
+SET(TVM_ROOT "/home/nitesh/nitesh_nfs_share/tvm/")
+SET(DMLC_CORE "${TVM_ROOT}/3rdparty/dmlc-core")
+SET(GEM5_PATH "/home/nitesh/nitesh_nfs_share/gem5-gaia")
+
+#SET(PKG_CFLAGS "-std=c++14 -O2 -fPIC -march=armv8-a+sve -I${GEM5_PATH}/include -I${TVM_ROOT}/include -I${DMLC_CODE}/include -I${TVM_ROOT}/3rdparty/dlpack/include ")
+SET(PKG_CFLAGS " -O2 -frecord-gcc-switches -fPIC -march=armv8-a+sve2 -I${GEM5_PATH}/include -I${TVM_ROOT}/include -I${DMLC_CODE}/include -I${TVM_ROOT}/3rdparty/dlpack/include ")
+
+SET(PKG_LDFLAGS "-L/home/nitesh/nitesh_nfs_share/runtime/arm_runtime -ldl -pthread")
+SET(GEM5_LDFLAGS "-L${GEM5_PATH}/util/m5/build/aarch64/out -lm5")
+# CROSS COMPILING
+SET(CMAKE_C_COMPILER  aarch64-linux-gnu-gcc-10)
+SET(CMAKE_CXX_COMPILER  aarch64-linux-gnu-g++-10)
+
+
 # Enable DBGPRINTF() in DEBUG mode (`cmake -DCMAKE_BUILD_TYPE=Debug ..`)
 SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -D_DEBUG -DTVMCG_DEBUG_ALLOCATIONS")
 SET(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -D_DEBUG -DTVMCG_DEBUG_ALLOCATIONS")
+
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${PKG_CFLAGS}")
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${PKG_CFLAGS}")
+SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${PKG_LDFLAGS}")
+
+
+
 
 SET(TVM_OUT_DIR ../out)
 

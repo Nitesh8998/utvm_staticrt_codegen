@@ -1,0 +1,20 @@
+# ninja log v5
+0	362	1638359268300426497	CMakeFiles/utvm_staticrt_codegen.dir/src/main.cpp.o	f0ecc6118155a975
+654	670	1638359268620427638	libutvm_staticrt_codegen_lib.a	80db972c851a6af2
+670	739	1638359268688427881	utvm_staticrt_codegen	a6341078b83ea586
+2	40	1638359267992425394	CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/stack_allocator.c.o	30d77519f59b5a55
+2	51	1638359268000425425	CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/packed_func.c.o	4e48f13ed8eab49e
+0	53	1638359268004425437	CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/bundle_static.c.o	4a79c6432482004b
+1	54	1638359268004425437	CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/ndarray.c.o	38f13651d0616a21
+2	55	1638359268004425437	CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/page_allocator.c.o	e6e2f398777d9bc3
+51	654	1638359268604427583	CMakeFiles/utvm_staticrt_codegen_lib.dir/src/CodeGen.cpp.o	92adebac37317537
+49	86	1638359268036425554	CMakeFiles/utvm_staticrt_codegen_lib.dir/src/TVMInfoExtraction.c.o	9f7bb9e9bcef59f1
+1	49	1638359268000425425	CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_backend_api.c.o	c8f98df8ff108ab5
+40	88	1638359268036425554	CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/load_json.c.o	1097d5fcaa5bb7f3
+117	130	1638359268080425709	libtvm_static_rt.a	3138ee04ff4814de
+4	107	1638359268056425623	CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/graph_executor.c.o	f5dba1e8810cda35
+1	83	1638359268032425537	CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/func_registry.c.o	4ecab2b376919316
+1	117	1638359268068425666	CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_runtime_api.c.o	2ea1bfbd72f46a4b
+1	21	1638370855154698015	libtvm_static_rt.a	45e9983828fa29c9
+21	47	1638370855182698102	libutvm_staticrt_codegen_lib.a	87865b40a61b9536
+47	126	1638370855258698338	utvm_staticrt_codegen	a6341078b83ea586

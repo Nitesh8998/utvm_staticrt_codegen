@@ -1,0 +1,17 @@
+def @main(%Input3: Tensor[(1, 1, 28, 28), float32], %Parameter5: Tensor[(8, 1, 5, 5), float32], %Parameter6: Tensor[(8, 1, 1), float32], %Parameter87: Tensor[(16, 8, 5, 5), float32], %Parameter88: Tensor[(16, 1, 1), float32], %Pooling160_Output_0_reshape0_shape: Tensor[(2), int64], %Parameter193: Tensor[(16, 4, 4, 10), float32], %Parameter193_reshape1_shape: Tensor[(2), int64], %Parameter194: Tensor[(1, 10), float32]) {
+  %0 = nn.pad(%Input3, 0f, pad_width=[[0, 0], [0, 0], [2, 2], [2, 2]]);
+  %1 = nn.conv2d(%0, %Parameter5, padding=[0, 0, 0, 0], channels=8, kernel_size=[5, 5]);
+  %2 = add(%1, %Parameter6);
+  %3 = nn.relu(%2);
+  %4 = nn.max_pool2d(%3, pool_size=[2, 2], strides=[2, 2], padding=[0, 0, 0, 0]);
+  %5 = nn.pad(%4, 0f, pad_width=[[0, 0], [0, 0], [2, 2], [2, 2]]);
+  %6 = nn.conv2d(%5, %Parameter87, padding=[0, 0, 0, 0], channels=16, kernel_size=[5, 5]);
+  %7 = add(%6, %Parameter88);
+  %8 = nn.relu(%7);
+  %9 = nn.max_pool2d(%8, pool_size=[3, 3], strides=[3, 3], padding=[0, 0, 0, 0]);
+  %10 = reshape(%Parameter193, newshape=[256, 10]);
+  %11 = reshape(%9, newshape=[1, 256]);
+  %12 = transpose(%10, axes=[1, 0]);
+  %13 = nn.dense(%11, %12, units=None, out_dtype="float32");
+  add(%13, %Parameter194)
+}

@@ -58,36 +58,82 @@ class ModelInfo:
             t = g.Tensors(g.Outputs(i))
             self.outTensors.append(TensorInfo(t))
 
+class OnnxModelInfo:
+    def __init__(self, onnx_model):
+
+        self.inNodes = [node for node in onnx_model.graph.input]
+
+
+        #for i in range(0,len(model.graph.input)):
+        #    in_node = model.graph.input[i]
+        #    self.inNodes.append(in_node)
+
+        self.outNodes = [node for node in onnx_model.graph.output]
+
+        #for i in range(0,len(model.graph.input)):
+        #    out_node = model.graph.output[i]
+        #    self.outNodes.append(out_node)
+
+    def get_shapes(self):
+
+
+
+        self.inShapes = []
+        self.outShapes = []
+
+        for _node in self.inNodes:
+            self.inShapes.append(tuple([d.dim_value for d in _node.type.tensor_type.shape.dim]))
+        
+        for _node in self.outNodes:
+            self.outShapes.append(tuple([d.dim_value for d in
+                _node.type.tensor_type.shape.dim]))
+
+
+        return
+
+
 
 class TVMFlow:
     def __init__(self):
-        self.opt_level = 3
+        self.opt_level = 0
         self.local = False
         if self.local:
             self.target = "llvm"
+            self.target = "c  -keys=arm_cpu --link-params --runtime=c --system-lib=1"
         else:
             self.target = tvm.target.target.micro("host")
 
 
     def loadModel(self, path):
+        
         print("### TVMFlow.loadModel")
 
-        modelBuf = open(path, "rb").read()
+        #modelBuf = open(path, "rb").read()
 
-        import tflite
-        tflModel = tflite.Model.GetRootAsModel(modelBuf, 0)
+        #import tflite
+        #tflModel = tflite.Model.GetRootAsModel(modelBuf, 0)
 
-        shapes = {}
+        import onnx
+        onnx_model = onnx.load(path)
+        
+
+        shapes = []
         types = {}
 
-        self.modelInfo = ModelInfo(tflModel)
-        for t in self.modelInfo.inTensors:
-            print("Input", '"' + t.name + '"', t.ty, t.shape)
-            shapes[t.name] = t.shape
-            types[t.name] = t.ty
+        #self.modelInfo = ModelInfo(tflModel)
+        
+        self.modelInfo = OnnxModelInfo(onnx_model)
+        self.modelInfo.get_shapes()
+        for n in self.modelInfo.inNodes:
+            shape = tuple([d.dim_value for d in n.type.tensor_type.shape.dim])
+            #print(n)
+            print("Input", '"' + n.name + '"', shape)
+            shapes.append({n.name:shape})
+            #types[n.name] = ty
 
-        self.mod, self.params = relay.frontend.from_tflite(tflModel, shape_dict=shapes, dtype_dict=types)
-
+        print(self.modelInfo.inShapes)
+        #self.mod, self.params = relay.frontend.from_tflite(tflModel, shape_dict=shapes, dtype_dict=types)
+        self.mod, self.params = relay.frontend.from_onnx(onnx_model, shapes[0])
 
     def build(self):
         print("### TVMFlow.build")
@@ -98,7 +144,9 @@ class TVMFlow:
             cfg = { "tir.disable_vectorize": True }
 
         with tvm.transform.PassContext(opt_level=self.opt_level, config=cfg):
+            print("bulding model using relay")
             c_mod = relay.build(self.mod, target=self.target, params=self.params)
+            print("model built successfully using relay")
             self.graph = c_mod.get_graph_json()
             self.c_params = c_mod.get_params()
 
@@ -112,6 +160,7 @@ class TVMFlow:
             with open(os.path.join(mlfDir, "metadata.json")) as f:
                 metadata = json.load(f)
             workspaceBytes = 0
+            print(metadata["memory"])
             for op in metadata["memory"]["functions"]["operator_functions"]:
                 workspaceBytes = max(workspaceBytes, op["workspace"][0]["workspace_size_bytes"])
 
@@ -164,6 +213,7 @@ def main():
     flow = TVMFlow()
     flow.loadModel(sys.argv[1])
     flow.build()
+    print("flow built successfully")
 
 if __name__ == "__main__":
     main()

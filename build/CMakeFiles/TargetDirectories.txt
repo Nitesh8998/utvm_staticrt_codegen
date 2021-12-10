@@ -1,0 +1,5 @@
+/scratch/nitesh/y1/exps/utvm_staticrt_codegen/build/CMakeFiles/rebuild_cache.dir
+/scratch/nitesh/y1/exps/utvm_staticrt_codegen/build/CMakeFiles/utvm_staticrt_codegen.dir
+/scratch/nitesh/y1/exps/utvm_staticrt_codegen/build/CMakeFiles/edit_cache.dir
+/scratch/nitesh/y1/exps/utvm_staticrt_codegen/build/CMakeFiles/tvm_static_rt.dir
+/scratch/nitesh/y1/exps/utvm_staticrt_codegen/build/CMakeFiles/utvm_staticrt_codegen_lib.dir

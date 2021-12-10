@@ -15,6 +15,52 @@ def toCArray(bin):
         result += hex(c) + ", "
     return result
 
+def getMetaOnnx(nodes, shapes, withNames=False):
+    out = ""
+    if withNames:
+        out = "const char *names[] = { "
+        for t in nodes:
+            out += "\"" + t.name + "\", "
+        out += "};\n    "
+
+    out += "DLDataType dtypes[] = {"
+    print(nodes[0])
+    for t in nodes:
+        if t.type.tensor_type.elem_type== 1:
+            out += "{kDLFloat, 32, 1}"
+        elif t.type.tensor_type.elem_type == 2:
+            out += "{kDLUInt, 8, 1}"
+        elif t.type.tensor_type.elem_type == 7:
+            out += "{kDLInt, 8, 1}"
+        else:
+            out +=  "{kDLFloat, 32, 1}"
+
+            raise "Invalid type"
+        out += ", "
+    out += "};\n    "
+
+    for i, shape in enumerate(shapes):
+        out += "int64_t shape_" + str(i) + "[] = { "
+        for s in shape:
+            out += str(s) + ", "
+        out += "};\n    "
+    out += "int64_t *shapes[] = { "
+    for i, shape in enumerate(shapes):
+        out += "shape_" + str(i) + ", "
+    out += "};\n"
+
+    t_size = 19
+
+    for i, t in enumerate(nodes):
+        out += "    static uint8_t data_" + str(i) + "[" + str(t_size) + "];\n"
+    out += "    uint8_t *data[] = { "
+    for i, t in enumerate(nodes):
+        out += "data_" + str(i) + ", "
+    out += "};"
+
+    return out
+
+
 def getMeta(tensors, withNames=False):
     out = ""
     if withNames:
@@ -56,9 +102,10 @@ def getMeta(tensors, withNames=False):
     return out
 
 def getSizes(tensors):
+    t_size = 19
     out = "size_t sizes[] = { "
     for t in tensors:
-        out += str(t.size) + ", "
+        out += str(t_size) + ", "
     out += "};"
     return out
 
@@ -124,6 +171,7 @@ size_t TVMWrap_GetNumInputs()
 
 void TVMWrap_Run()
 {
+    printf("In TVMWrap_Run\n");
     tvm_runtime_run(g_handle);
 }
 
@@ -160,12 +208,12 @@ size_t TVMWrap_GetNumOutputs()
 '''
         f.write(fill(
             mainCode,
-            inMeta=getMeta(modelInfo.inTensors, True),
-            outMeta=getMeta(modelInfo.outTensors),
+            inMeta=getMetaOnnx(modelInfo.inNodes, modelInfo.inShapes, True),
+            outMeta=getMetaOnnx(modelInfo.outNodes, modelInfo.outShapes),
             inNDims=2,
             outNDims=2,
-            inSizes=getSizes(modelInfo.inTensors),
-            outSizes=getSizes(modelInfo.outTensors),
-            numInputs=len(modelInfo.inTensors),
-            numOutputs=len(modelInfo.outTensors)))
+            inSizes=getSizes(modelInfo.inNodes),
+            outSizes=getSizes(modelInfo.outNodes),
+            numInputs=len(modelInfo.inNodes),
+            numOutputs=len(modelInfo.outNodes)))
 
