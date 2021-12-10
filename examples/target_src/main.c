@@ -11,6 +11,8 @@ int main()
 {
     TVMWrap_Init();
 
+    printf("Initialized TVM Runtime \n");
+
     *(float*)TVMWrap_GetInputPtr(0) = 3.14f/2;
 
     TVMWrap_Run();

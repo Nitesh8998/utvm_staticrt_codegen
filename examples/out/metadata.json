@@ -1,0 +1,228 @@
+{
+  "executors": [
+    "graph"
+  ],
+  "export_datetime": "2021-12-10 16:48:18Z",
+  "memory": {
+    "functions": {
+      "main": [
+        {
+          "constants_size_bytes": 23984,
+          "device": 1,
+          "io_size_bytes": 3176,
+          "workspace_size_bytes": 75656
+        }
+      ],
+      "operator_functions": [
+        {
+          "function_name": "tvmgen_default_fused_add_1",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_nn_conv2d",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 5344
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_nn_max_pool2d_1",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_nn_max_pool2d",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_nn_pad",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_nn_conv2d_1",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 23392
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_nn_pad_1",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_reshape_1",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_transpose",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_reshape",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_add",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_nn_relu_1",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_add_2",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_nn_relu",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_nn_dense",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 10272
+            }
+          ]
+        }
+      ]
+    },
+    "sids": [
+      {
+        "input_binding": "Input3",
+        "size_bytes": 3136,
+        "storage_id": 0
+      },
+      {
+        "input_binding": "p0",
+        "size_bytes": 4,
+        "storage_id": 1
+      },
+      {
+        "size_bytes": 4096,
+        "storage_id": 2
+      },
+      {
+        "input_binding": "p1",
+        "size_bytes": 800,
+        "storage_id": 3
+      },
+      {
+        "size_bytes": 25088,
+        "storage_id": 4
+      },
+      {
+        "input_binding": "p2",
+        "size_bytes": 32,
+        "storage_id": 5
+      },
+      {
+        "input_binding": "p3",
+        "size_bytes": 25088,
+        "storage_id": 6
+      },
+      {
+        "input_binding": "p4",
+        "size_bytes": 25088,
+        "storage_id": 7
+      },
+      {
+        "input_binding": "p5",
+        "size_bytes": 6272,
+        "storage_id": 8
+      },
+      {
+        "size_bytes": 4,
+        "storage_id": 9
+      },
+      {
+        "input_binding": "p6",
+        "size_bytes": 10368,
+        "storage_id": 10
+      },
+      {
+        "size_bytes": 12800,
+        "storage_id": 11
+      },
+      {
+        "input_binding": "p7",
+        "size_bytes": 12544,
+        "storage_id": 12
+      },
+      {
+        "size_bytes": 64,
+        "storage_id": 13
+      }
+    ]
+  },
+  "model_name": "default",
+  "style": "full-model",
+  "target": {
+    "1": "c -keys=cpu -link-params=0 -model=host"
+  },
+  "version": 5
+}
