@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src
+CMAKE_SOURCE_DIR = /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build
+CMAKE_BINARY_DIR = /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -433,59 +433,32 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/example_target_src.dir/build.make CMakeFiles/example_target_src.dir/main.c.s
 .PHONY : main.c.s
 
-scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.o: scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o
+scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.o: scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o
 
-.PHONY : scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.o
-
-# target to build an object file
-scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o:
-	$(MAKE) -f CMakeFiles/example_target_src.dir/build.make CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o
-.PHONY : scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o
-
-scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.i: scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.i
-
-.PHONY : scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.i
-
-# target to preprocess a source file
-scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.i:
-	$(MAKE) -f CMakeFiles/example_target_src.dir/build.make CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.i
-.PHONY : scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.i
-
-scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.s: scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.s
-
-.PHONY : scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.s
-
-# target to generate assembly for a file
-scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.s:
-	$(MAKE) -f CMakeFiles/example_target_src.dir/build.make CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.s
-.PHONY : scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.s
-
-scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.o: scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o
-
-.PHONY : scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.o
+.PHONY : scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.o
 
 # target to build an object file
-scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o:
-	$(MAKE) -f CMakeFiles/example_target_src.dir/build.make CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o
-.PHONY : scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o
+scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o:
+	$(MAKE) -f CMakeFiles/example_target_src.dir/build.make CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o
+.PHONY : scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o
 
-scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.i: scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.i
+scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.i: scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.i
 
-.PHONY : scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.i
+.PHONY : scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.i
 
 # target to preprocess a source file
-scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.i:
-	$(MAKE) -f CMakeFiles/example_target_src.dir/build.make CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.i
-.PHONY : scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.i
+scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.i:
+	$(MAKE) -f CMakeFiles/example_target_src.dir/build.make CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.i
+.PHONY : scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.i
 
-scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.s: scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.s
+scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.s: scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.s
 
-.PHONY : scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.s
+.PHONY : scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.s
 
 # target to generate assembly for a file
-scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.s:
-	$(MAKE) -f CMakeFiles/example_target_src.dir/build.make CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.s
-.PHONY : scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.s
+scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.s:
+	$(MAKE) -f CMakeFiles/example_target_src.dir/build.make CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.s
+.PHONY : scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.s
 
 # Help Target
 help:
@@ -530,12 +503,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.o"
-	@echo "... scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.i"
-	@echo "... scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.s"
-	@echo "... scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.o"
-	@echo "... scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.i"
-	@echo "... scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.s"
+	@echo "... scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.o"
+	@echo "... scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.i"
+	@echo "... scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.s"
 .PHONY : help
 
 

@@ -4,9 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/main.c" "/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles/example_target_src.dir/main.c.o"
-  "/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c" "/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o"
-  "/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c" "/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o"
+  "/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/main.c" "/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles/example_target_src.dir/main.c.o"
+  "/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c" "/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -22,7 +21,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles/tvm_static_rt.dir/DependInfo.cmake"
+  "/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles/tvm_static_rt.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

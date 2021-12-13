@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/example_target_src.dir/main.c.o"
-  "CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o"
-  "CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o"
+  "CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o"
   "example_target_src"
   "example_target_src.pdb"
 )

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src
+CMAKE_SOURCE_DIR = /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build
+CMAKE_BINARY_DIR = /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/example_target_src.dir/depend.make
@@ -59,59 +59,46 @@ include CMakeFiles/example_target_src.dir/flags.make
 
 CMakeFiles/example_target_src.dir/main.c.o: CMakeFiles/example_target_src.dir/flags.make
 CMakeFiles/example_target_src.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/example_target_src.dir/main.c.o"
-	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/example_target_src.dir/main.c.o   -c /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/example_target_src.dir/main.c.o"
+	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/example_target_src.dir/main.c.o   -c /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/main.c
 
 CMakeFiles/example_target_src.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/example_target_src.dir/main.c.i"
-	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/main.c > CMakeFiles/example_target_src.dir/main.c.i
+	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/main.c > CMakeFiles/example_target_src.dir/main.c.i
 
 CMakeFiles/example_target_src.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/example_target_src.dir/main.c.s"
-	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/main.c -o CMakeFiles/example_target_src.dir/main.c.s
+	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/main.c -o CMakeFiles/example_target_src.dir/main.c.s
 
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o: CMakeFiles/example_target_src.dir/flags.make
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o: /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o"
-	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o   -c /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c
+CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o: CMakeFiles/example_target_src.dir/flags.make
+CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o: /scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o"
+	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o   -c /scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c
 
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.i"
-	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c > CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.i
+CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.i"
+	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c > CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.i
 
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.s"
-	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c -o CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.s
-
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o: CMakeFiles/example_target_src.dir/flags.make
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o: /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o"
-	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o   -c /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c
-
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.i"
-	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c > CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.i
-
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.s"
-	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c -o CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.s
+CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.s"
+	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c -o CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.s
 
 # Object files for target example_target_src
 example_target_src_OBJECTS = \
 "CMakeFiles/example_target_src.dir/main.c.o" \
-"CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o" \
-"CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o"
+"CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o"
 
 # External object files for target example_target_src
-example_target_src_EXTERNAL_OBJECTS =
+example_target_src_EXTERNAL_OBJECTS = \
+"/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/default_lib0.o"
 
 example_target_src: CMakeFiles/example_target_src.dir/main.c.o
-example_target_src: CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o
-example_target_src: CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o
+example_target_src: CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o
+example_target_src: /scratch/nitesh/y1/exps/utvm_code_gen/examples/out/default_lib0.o
 example_target_src: CMakeFiles/example_target_src.dir/build.make
 example_target_src: libtvm_static_rt.a
 example_target_src: CMakeFiles/example_target_src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable example_target_src"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable example_target_src"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example_target_src.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +111,6 @@ CMakeFiles/example_target_src.dir/clean:
 .PHONY : CMakeFiles/example_target_src.dir/clean
 
 CMakeFiles/example_target_src.dir/depend:
-	cd /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles/example_target_src.dir/DependInfo.cmake --color=$(COLOR)
+	cd /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles/example_target_src.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/example_target_src.dir/depend
 

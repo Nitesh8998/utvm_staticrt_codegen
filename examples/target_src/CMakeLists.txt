@@ -14,6 +14,7 @@ SET(PKG_LDFLAGS "-L/home/nitesh/nitesh_nfs_share/runtime/arm_runtime -ldl -pthre
 SET(GEM5_LDFLAGS "-L${GEM5_PATH}/util/m5/build/aarch64/out -lm5")
 # CROSS COMPILING
 SET(CMAKE_C_COMPILER  aarch64-linux-gnu-gcc-10)
+#SET(CMAKE_C_COMPILER  clang)
 SET(CMAKE_CXX_COMPILER  aarch64-linux-gnu-g++-10)
 
 
@@ -36,6 +37,7 @@ FILE(GLOB TVM_KERNELS
     # New model will have model name prefix
     ${TVM_OUT_DIR}/*_lib*.c
     ${TVM_OUT_DIR}/*_lib*.cc
+    ${TVM_OUT_DIR}/*.o
 )
 
 ADD_EXECUTABLE(${PROJECT_NAME}

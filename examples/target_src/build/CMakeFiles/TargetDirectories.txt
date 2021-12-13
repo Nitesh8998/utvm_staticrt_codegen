@@ -1,4 +1,4 @@
-/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles/rebuild_cache.dir
-/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles/edit_cache.dir
-/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles/example_target_src.dir
-/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles/tvm_static_rt.dir
+/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles/rebuild_cache.dir
+/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles/edit_cache.dir
+/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles/example_target_src.dir
+/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles/tvm_static_rt.dir

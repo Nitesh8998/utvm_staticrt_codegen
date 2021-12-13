@@ -25,7 +25,10 @@ run_test() {
 #run_test sine_model.tflite
 #run_test cifar10.tflite
 
-run_test /home/nitesh/nitesh_nfs_share/models//classification/mnist/mnist-8.onnx
+#run_test /home/nitesh/nitesh_nfs_share/models//classification/mnist/mnist-8.onnx
 
 #run_test /home/nitesh/nitesh_nfs_share/models//classification/zfnet-512/zfnet512-9.onnx
 #run_test /home/nitesh/nitesh_nfs_share/models//classification/resnet/resnet18v1.onnx
+
+
+run_test /home/nitesh/nitesh_nfs_share/models/micro_models/simple_Nets/simple_CNN.onnx

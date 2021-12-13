@@ -6,16 +6,11 @@ CMakeFiles/example_target_src.dir/main.c.o: ../main.c
 CMakeFiles/example_target_src.dir/main.c.o: ../printing.h
 CMakeFiles/example_target_src.dir/main.c.o: ../tvm_wrapper.h
 
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o: /home/nitesh/nitesh_nfs_share/tvm/3rdparty/dlpack/include/dlpack/dlpack.h
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o: /home/nitesh/nitesh_nfs_share/tvm/include/tvm/runtime/c_backend_api.h
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o: /home/nitesh/nitesh_nfs_share/tvm/include/tvm/runtime/c_runtime_api.h
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c.o: /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/default_lib0.c
-
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o: ../printing.h
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o: /home/nitesh/nitesh_nfs_share/tvm/3rdparty/dlpack/include/dlpack/dlpack.h
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o: /home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/crt_config/crt_config.h
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o: /home/nitesh/nitesh_nfs_share/tvm/include/tvm/runtime/c_runtime_api.h
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o: /home/nitesh/nitesh_nfs_share/tvm/include/tvm/runtime/crt/error_codes.h
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o: /home/nitesh/nitesh_nfs_share/tvm/include/tvm/runtime/crt/stack_allocator.h
-CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c.o: /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/out/staticrt.c
+CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o: ../printing.h
+CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o: /home/nitesh/nitesh_nfs_share/tvm/3rdparty/dlpack/include/dlpack/dlpack.h
+CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o: /home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/crt_config/crt_config.h
+CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o: /home/nitesh/nitesh_nfs_share/tvm/include/tvm/runtime/c_runtime_api.h
+CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o: /home/nitesh/nitesh_nfs_share/tvm/include/tvm/runtime/crt/error_codes.h
+CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o: /home/nitesh/nitesh_nfs_share/tvm/include/tvm/runtime/crt/stack_allocator.h
+CMakeFiles/example_target_src.dir/scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c.o: /scratch/nitesh/y1/exps/utvm_code_gen/examples/out/staticrt.c
 

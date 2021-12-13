@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src
+CMAKE_SOURCE_DIR = /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build
+CMAKE_BINARY_DIR = /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tvm_static_rt.dir/depend.make
@@ -59,7 +59,7 @@ include CMakeFiles/tvm_static_rt.dir/flags.make
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/bundle_static.c.o: CMakeFiles/tvm_static_rt.dir/flags.make
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/bundle_static.c.o: /home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/bundle_static.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/bundle_static.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/bundle_static.c.o"
 	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/bundle_static.c.o   -c /home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/bundle_static.c
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/bundle_static.c.i: cmake_force
@@ -72,7 +72,7 @@ CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_backend_api.c.o: CMakeFiles/tvm_static_rt.dir/flags.make
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_backend_api.c.o: /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_backend_api.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_backend_api.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_backend_api.c.o"
 	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_backend_api.c.o   -c /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_backend_api.c
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_backend_api.c.i: cmake_force
@@ -85,7 +85,7 @@ CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/co
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_runtime_api.c.o: CMakeFiles/tvm_static_rt.dir/flags.make
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_runtime_api.c.o: /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_runtime_api.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_runtime_api.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_runtime_api.c.o"
 	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_runtime_api.c.o   -c /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_runtime_api.c
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/crt_runtime_api.c.i: cmake_force
@@ -98,7 +98,7 @@ CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/co
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/func_registry.c.o: CMakeFiles/tvm_static_rt.dir/flags.make
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/func_registry.c.o: /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/func_registry.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/func_registry.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/func_registry.c.o"
 	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/func_registry.c.o   -c /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/func_registry.c
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/func_registry.c.i: cmake_force
@@ -111,7 +111,7 @@ CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/co
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/ndarray.c.o: CMakeFiles/tvm_static_rt.dir/flags.make
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/ndarray.c.o: /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/ndarray.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/ndarray.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/ndarray.c.o"
 	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/ndarray.c.o   -c /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/ndarray.c
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/ndarray.c.i: cmake_force
@@ -124,7 +124,7 @@ CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/co
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/packed_func.c.o: CMakeFiles/tvm_static_rt.dir/flags.make
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/packed_func.c.o: /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/packed_func.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/packed_func.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/packed_func.c.o"
 	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/packed_func.c.o   -c /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/packed_func.c
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/common/packed_func.c.i: cmake_force
@@ -137,7 +137,7 @@ CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/co
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/page_allocator.c.o: CMakeFiles/tvm_static_rt.dir/flags.make
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/page_allocator.c.o: /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/page_allocator.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/page_allocator.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/page_allocator.c.o"
 	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/page_allocator.c.o   -c /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/page_allocator.c
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/page_allocator.c.i: cmake_force
@@ -150,7 +150,7 @@ CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/me
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/stack_allocator.c.o: CMakeFiles/tvm_static_rt.dir/flags.make
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/stack_allocator.c.o: /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/stack_allocator.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/stack_allocator.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/stack_allocator.c.o"
 	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/stack_allocator.c.o   -c /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/stack_allocator.c
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/memory/stack_allocator.c.i: cmake_force
@@ -163,7 +163,7 @@ CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/me
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/graph_executor.c.o: CMakeFiles/tvm_static_rt.dir/flags.make
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/graph_executor.c.o: /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/graph_executor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/graph_executor.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/graph_executor.c.o"
 	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/graph_executor.c.o   -c /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/graph_executor.c
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/graph_executor.c.i: cmake_force
@@ -176,7 +176,7 @@ CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/gr
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/load_json.c.o: CMakeFiles/tvm_static_rt.dir/flags.make
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/load_json.c.o: /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/load_json.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/load_json.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/load_json.c.o"
 	aarch64-linux-gnu-gcc-10 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/load_json.c.o   -c /home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/load_json.c
 
 CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/load_json.c.i: cmake_force
@@ -215,7 +215,7 @@ libtvm_static_rt.a: CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tv
 libtvm_static_rt.a: CMakeFiles/tvm_static_rt.dir/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/graph_executor/load_json.c.o
 libtvm_static_rt.a: CMakeFiles/tvm_static_rt.dir/build.make
 libtvm_static_rt.a: CMakeFiles/tvm_static_rt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C static library libtvm_static_rt.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C static library libtvm_static_rt.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/tvm_static_rt.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tvm_static_rt.dir/link.txt --verbose=$(VERBOSE)
 
@@ -229,6 +229,6 @@ CMakeFiles/tvm_static_rt.dir/clean:
 .PHONY : CMakeFiles/tvm_static_rt.dir/clean
 
 CMakeFiles/tvm_static_rt.dir/depend:
-	cd /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build /scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src/build/CMakeFiles/tvm_static_rt.dir/DependInfo.cmake --color=$(COLOR)
+	cd /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build /scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src/build/CMakeFiles/tvm_static_rt.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tvm_static_rt.dir/depend
 

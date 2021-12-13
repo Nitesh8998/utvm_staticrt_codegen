@@ -6,5 +6,5 @@ C_FLAGS =   -O2 -frecord-gcc-switches -fPIC -march=armv8-a+sve2 -I/home/nitesh/n
 
 C_DEFINES = 
 
-C_INCLUDES = -I/scratch/nitesh/y1/exps/utvm_staticrt_codegen/examples/target_src -I/home/nitesh/nitesh_nfs_share/tvm/include -I/home/nitesh/nitesh_nfs_share/tvm/3rdparty/dlpack/include -I/home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy -I/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/include -I/home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/crt_config 
+C_INCLUDES = -I/scratch/nitesh/y1/exps/utvm_code_gen/examples/target_src -I/home/nitesh/nitesh_nfs_share/tvm/include -I/home/nitesh/nitesh_nfs_share/tvm/3rdparty/dlpack/include -I/home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy -I/home/nitesh/nitesh_nfs_share/tvm/src/runtime/crt/include -I/home/nitesh/nitesh_nfs_share/tvm/apps/bundle_deploy/crt_config 
 
