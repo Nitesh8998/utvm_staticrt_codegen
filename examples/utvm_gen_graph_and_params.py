@@ -97,7 +97,7 @@ class OnnxModelInfo:
 class TVMFlow:
     def __init__(self):
         self.opt_level = 0
-        self.local = True
+        self.local = False
         if self.local:
             self.target = "c  -keys=arm_cpu --link-params --runtime=c --system-lib=1"
             self.target = "llvm  -mtriple=aarch64-linux-gnu -mattr=+sve"
