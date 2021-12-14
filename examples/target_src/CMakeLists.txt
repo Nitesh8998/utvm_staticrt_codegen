@@ -8,7 +8,7 @@ SET(DMLC_CORE "${TVM_ROOT}/3rdparty/dmlc-core")
 SET(GEM5_PATH "/home/nitesh/nitesh_nfs_share/gem5-gaia")
 
 #SET(PKG_CFLAGS "-std=c++14 -O2 -fPIC -march=armv8-a+sve -I${GEM5_PATH}/include -I${TVM_ROOT}/include -I${DMLC_CODE}/include -I${TVM_ROOT}/3rdparty/dlpack/include ")
-SET(PKG_CFLAGS " -O2 -frecord-gcc-switches -fPIC -march=armv8-a+sve2 -I${GEM5_PATH}/include -I${TVM_ROOT}/include -I${DMLC_CODE}/include -I${TVM_ROOT}/3rdparty/dlpack/include ")
+SET(PKG_CFLAGS " -Ofast -frecord-gcc-switches -fPIC -march=armv8-a+sve2 -I${GEM5_PATH}/include -I${TVM_ROOT}/include -I${DMLC_CODE}/include -I${TVM_ROOT}/3rdparty/dlpack/include ")
 
 SET(PKG_LDFLAGS "-L/home/nitesh/nitesh_nfs_share/runtime/arm_runtime -ldl -pthread")
 SET(GEM5_LDFLAGS "-L${GEM5_PATH}/util/m5/build/aarch64/out -lm5")
