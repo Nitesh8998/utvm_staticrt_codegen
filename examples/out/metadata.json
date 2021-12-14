@@ -1,0 +1,69 @@
+{
+  "executors": [
+    "graph"
+  ],
+  "export_datetime": "2021-12-14 13:41:02Z",
+  "memory": {
+    "functions": {
+      "main": [
+        {
+          "constants_size_bytes": 1049600,
+          "device": 1,
+          "io_size_bytes": 115712,
+          "workspace_size_bytes": 115712
+        }
+      ],
+      "operator_functions": [
+        {
+          "function_name": "tvmgen_default_fused_nn_conv1d",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 16384
+            }
+          ]
+        },
+        {
+          "function_name": "tvmgen_default_fused_nn_bias_add",
+          "workspace": [
+            {
+              "device": 1,
+              "workspace_size_bytes": 0
+            }
+          ]
+        }
+      ]
+    },
+    "sids": [
+      {
+        "input_binding": "input",
+        "size_bytes": 16384,
+        "storage_id": 0
+      },
+      {
+        "input_binding": "p0",
+        "size_bytes": 1048576,
+        "storage_id": 1
+      },
+      {
+        "size_bytes": 99328,
+        "storage_id": 2
+      },
+      {
+        "input_binding": "p1",
+        "size_bytes": 1024,
+        "storage_id": 3
+      },
+      {
+        "size_bytes": 99328,
+        "storage_id": 4
+      }
+    ]
+  },
+  "model_name": "default",
+  "style": "full-model",
+  "target": {
+    "1": "c -keys=arm_cpu,cpu -link-params=1 -march=armv8-a+sve -runtime=c -system-lib=1"
+  },
+  "version": 5
+}

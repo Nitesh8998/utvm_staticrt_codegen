@@ -1,0 +1,4 @@
+def @main(%input: Tensor[(1, 16, 256), float32], %conv1.weight: Tensor[(256, 16, 64), float32], %conv1.bias: Tensor[(256), float32]) {
+  %0 = nn.conv1d(%input, %conv1.weight, strides=[2], channels=256, kernel_size=[64]);
+  nn.bias_add(%0, %conv1.bias)
+}
